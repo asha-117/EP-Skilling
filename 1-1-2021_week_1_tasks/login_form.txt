@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var user=document.f1.user.value;
+var password=document.f1.password.value;
+if(user==null||user=="" ||password=null ||password="")
+{
+alert("enter the username and password  properly");
+}
+
+var us=user.length();
+var pwd=password.length();
+if(us<8 ||pwd<8)
+{
+alert("Enter atleast 8 characters both the entries");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" onsubmit="validate()">
+Username:<input type="text" name="user"><br>
+Email:<input type="text" name="email"><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>

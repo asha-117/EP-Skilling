@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var user=document.f1.user.value;
+var pwd=document.f1.pwd.value;
+if(user==null||user=="" ||pwd==null ||pwd=="")
+{
+alert("enter the credentials properly");
+}
+var us=pwd.length;
+var pw=pwd.length;
+if(us==pw)
+{
+  if(us>8 &&pw>8)
+{  
+  alert("WELCOME "+user);
+}
+}
+if(us>0 && pw>0)
+{
+if(us<8 ||pw<8){
+alert("Please enter atleast 8 characters of username and password");}
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" onsubmit="validate()">
+Username:<input type="text" name="user"><br>
+Password:<input type="password" name="pwd"><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
