@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Students (student+)>
+<!ELEMENT student (no,name,email,marks,class)>
+<!ELEMENT no (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT sid (#PCDATA)>
+<!ATTLIST student sid ID #REQUIRED>
+
