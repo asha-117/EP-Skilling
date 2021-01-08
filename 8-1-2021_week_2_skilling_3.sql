@@ -1,0 +1,15 @@
+show databases;
+use world;
+create table employee(ename char(20),eid int,age int,dept char(10), designation char(15),salary int,dow char(20));
+desc employee;
+insert into employee values("Sara",101,24,"CSE","Professor",50000,"24-10-2005");
+insert into employee values("John",102,28,"ECE","Asst.Professor",50000,"10-2-2009");
+insert into employee values("Catley",103,23,"EEE","Professor",50000,"17-3-2003");
+insert into employee values("Wesley",104,24,"mech","Asst.Professor",50000,"21-7-2008");
+insert into employee values("Vedanth",105,25,"CSE","Professor",50000,"5-12-2001");
+select * from employee;
+delete from employee where eid=105;
+update employee set columnname="Address";
+update employee set Address="Vijayawada" where eid=101;
+update employee set Address="Hyderabad" where eid=103;
+insert into employee values("Vedanth",105,25,"CSE","Professor",50000,"5-12-2001");
